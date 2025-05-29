@@ -2089,3 +2089,42 @@ section,
       gap: 2rem;
       white-space: nowrap;
     }
+
+    /*  */
+
+    .swrhome{
+animation: img;
+ animation-duration: 16s;
+  animation-iteration-count: infinite;
+  
+    }
+
+    @keyframes img{ 
+    from{
+ transform: translatey(300px);
+ scale: -1;
+
+    }
+    to{
+ transform: translatey(0px);
+ 
+    }
+   
+}
+
+
+   .onwords{
+animation: word;
+ animation-duration: 10s;
+
+    }
+
+    @keyframes word{ 
+    from{
+ transform: translatex(1000px);
+    }
+    to{
+ transform: translatex(0px);
+    }
+   
+}
