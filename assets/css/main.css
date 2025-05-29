@@ -2072,30 +2072,20 @@ section,
 
 
 /*  */
-  .topbar {
+
+   .topbar {
       background-color: #f8f9fa;
-      overflow: hidden;
+      padding: 8px 0;
+    }
+
+    .topbar marquee {
+      display: block;
       white-space: nowrap;
     }
 
-    .topbar-content {
-      display: inline-block;
-      animation: scrollLeft 15s linear infinite;
-    }
-
-    @keyframes scrollLeft {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    /* Make sure items stay on the same line in all sizes */
-    .topbar-info {
-      display: flex;
-      gap: 2rem;
+    .topbar .topbar-inner {
+      display: inline-flex;
       align-items: center;
-      flex-wrap: nowrap;
+      gap: 2rem;
+      white-space: nowrap;
     }
