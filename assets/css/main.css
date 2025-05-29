@@ -1966,6 +1966,108 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+/* animation */
+
+.advs{
+ width: 100%;
+ max-width: 250px; 
+ border-color: #0d3b66;
+   animation: advr;
+    animation-duration: 10s;
 }
+
+
+@keyframes advr {
+    from{
+ transform: translatex(-1000px);
+    }
+    to{
+ transform: translatex(0px);
+    }
+   
+}
+
+
+.adv{
+ width: 100%;
+ max-width: 250px; 
+ border-color: #0d3b66;
+   animation: adv;
+    animation-duration: 10s;
+}
+
+
+@keyframes adv{ 
+    from{
+ transform: translatey(-1000px);
+    }
+    to{
+ transform: translatey(0px);
+    }
+   
+}
+
+
+.sun{
+ width: 100%;
+ max-width: 250px; 
+ border-color: #0d3b66;
+   animation:sun ;
+    animation-duration: 10s;
+}
+
+
+@keyframes sun{ 
+    from{
+ transform: translatex(1000px);
+    }
+    to{
+ transform: translatex(0px);
+    }
+   
+}
+
+
+
+.minis{
+ width: 100%;
+ max-width: 250px; 
+ border-color: #0d3b66;
+   animation:minis ;
+    animation-duration: 10s;
+}
+
+
+@keyframes minis{ 
+    from{
+ transform: translatex(-1000px);
+    }
+    to{
+ transform: translatex(0px);
+    }
+   
+}
+
+
+
+
+.sina{
+ width: 100%;
+ max-width: 250px; 
+ border-color: #0d3b66;
+   animation:sina ;
+    animation-duration: 10s;
+}
+
+
+@keyframes sina{ 
+    from{
+ transform: translatey(1000px);
+    }
+    to{
+ transform: translatey(0px);
+    }
+   
+}
+
+
