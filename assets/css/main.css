@@ -2071,3 +2071,31 @@ section,
 }
 
 
+/*  */
+  .topbar {
+      background-color: #f8f9fa;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .topbar-content {
+      display: inline-block;
+      animation: scrollLeft 15s linear infinite;
+    }
+
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Make sure items stay on the same line in all sizes */
+    .topbar-info {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
