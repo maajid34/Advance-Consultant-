@@ -196,3 +196,38 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+
+  const messages = [
+    "Welcome to Advance Consultant!"
+  ];
+
+  const element = document.getElementById("typed-text");
+  let msgIndex = 0;
+  let charIndex = 0;
+
+  function typeWriter() {
+    if (charIndex < messages[msgIndex].length) {
+      element.innerHTML += messages[msgIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(typeWriter, 100);
+    } else {
+      setTimeout(() => {
+        eraseText();
+      }, 1500);
+    }
+  }
+
+  function eraseText() {
+    if (charIndex > 0) {
+      element.innerHTML = messages[msgIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(eraseText, 50);
+    } else {
+      msgIndex = (msgIndex + 1) % messages.length; // 👉 Infinite loop
+      setTimeout(typeWriter, 500);
+    }
+  }
+
+  window.onload = typeWriter;

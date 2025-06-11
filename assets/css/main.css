@@ -283,6 +283,25 @@ h6 {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
+/* navbar */
+
+.navAnimation {
+animation: Navanim;
+animation-duration: 5s;
+}
+@keyframes Navanim{ 
+    from{
+ transform: translatey(-1000px);
+    }
+    to{
+ transform: translatex(0px);
+    }
+   
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1042,6 +1061,35 @@ section,
   inset: 0;
   border-radius: 0px;
 }
+
+/* animation */
+.servAnim1 {
+  animation-name: serviceAnim;
+  animation-duration: 10s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+
+  /* Scroll Animation (Experimental Feature!) */
+  animation-timeline: view();
+  animation-range: entry 10%;
+}
+
+@keyframes serviceAnim {
+  from {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.activt1{
+
+}
+
 
 /*--------------------------------------------------------------
 # Call To Action Section
@@ -2128,3 +2176,47 @@ animation: word;
     }
    
 }
+/* activity */
+
+.activt1{
+  animation: activityan;
+ animation-duration: 5s;
+ animation-timeline: view();
+ animation-range: entry 10%;
+animation-delay: 15s;
+
+}
+
+@keyframes activityan {
+  from {
+     transform: translateY(-1000px);
+ 
+  }
+  to {
+    transform: translatey(0);
+  
+  }
+}
+
+
+.activt2{
+  animation: activityan2;
+ animation-duration: 5s;
+ animation-timeline: view();
+ animation-range: entry 10%;
+animation-delay: 15s;
+
+}
+
+@keyframes activityan2 {
+  from {
+     transform: translateY(-1000px);
+ 
+  }
+  to {
+    transform: translatey(0);
+  
+  }
+}
+
+
